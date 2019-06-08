@@ -38,10 +38,6 @@ def run(choice):
         time.sleep(2)
         print('YOU DIED. GAME OVER')
 
-pygame.init()
-DISPLAYSURF = pygame.display.set_mode((400, 300))
-pygame.display.set_caption('The Cave')
-
 # How we get the name of the enemy
 enemy = ['troll', 'goblin', 'orc', 'dragon', 'mutant',]
 descriptor = ['ugly', 'large', 'nasty', 'smelly', 'gross']
