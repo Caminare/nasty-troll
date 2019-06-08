@@ -39,7 +39,7 @@ def run(choice):
         print('YOU DIED. GAME OVER')
 
 # How we get the name of the enemy
-enemy = ['troll', 'goblin', 'orc', 'dragon', 'mutant',]
+enemy = ['troll', 'goblin', 'orc', 'dragon', 'mutant']
 descriptor = ['ugly', 'large', 'nasty', 'smelly', 'gross']
 instanceEnemy = random.choice(descriptor) + ' ' + random.choice(enemy)
 
