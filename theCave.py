@@ -39,19 +39,19 @@ def run(choice):
         print('YOU DIED. GAME OVER')
 
 # How we get the name of the enemy
-enemy = ['troll', 'goblin', 'orc', 'dragon', 'mutant']
+enemy = ['troll', 'goblin', 'orc', 'dragon', 'mutant',]
 descriptor = ['ugly', 'large', 'nasty', 'smelly', 'gross']
-instanceEnemy = random.choice(descriptor) + ' ' + random.choice(enemy)
 
 # How we get the values for each choice
 roll = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-attack = int(random.choice(roll))
-defense = int(random.choice(roll))
-runVal = int(random.choice(roll))
-escapeVal = int(random.choice(roll))
 
 playAgain = 'yes'
 while playAgain == 'yes':
+    instanceEnemy = random.choice(descriptor) + ' ' + random.choice(enemy)
+    attack = int(random.choice(roll))
+    defense = int(random.choice(roll))
+    runVal = int(random.choice(roll))
+    escapeVal = int(random.choice(roll))
     intro()
     choice = input()
     if choice == 'fight':
